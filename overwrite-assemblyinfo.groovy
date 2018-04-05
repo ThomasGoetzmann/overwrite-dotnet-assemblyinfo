@@ -1,10 +1,12 @@
 import java.util.regex.*
 
 def revision = "123"
-def sha1 = "fdfd8sf"
-def branchName = "feature/FLUX-1110-xdfsf"
+def sha1 = "dd3742e"
+def branchName = "feature/TSREV-123456-my-task-name"
+def filePath = 'C:/path/to/AssemblyInfo.cs'
 
-def file = new File('C:/Users/Thomas/Travail/01-git-repositories/groovy-scripting/AssemblyInfo.cs')
+
+def file = new File(filePath)
 def fileContent = file.text
 
 def versionMatch = fileContent =~ /(\[assembly: Assembly(?:File)?Version\(\"\d*\.\d*\.\d*\.)(?:\d*)/
